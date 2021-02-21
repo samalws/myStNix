@@ -1,1 +1,1 @@
-let pkgs = import <nixpkgs> {}; in (pkgs.st.overrideAttrs (oldAttrs: rec { patches = [ /home/uwe/purgatory/mySt/stConfig.diff ]; } ) )
+let pkgs = import <nixpkgs> {}; in (pkgs.st.overrideAttrs (oldAttrs: rec { patches = [ ./stConfig.diff ]; } ) )
